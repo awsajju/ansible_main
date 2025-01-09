@@ -1,0 +1,16 @@
+- name: playbook for task varaibal
+  hosts: local
+  connection: local
+  vars:
+   course: "Aws"
+   trainer: "Shiva"
+   duration: "120hrs"
+  tasks:
+    - name: Enter the variables
+      vars:
+        course: "devops"
+      ansible.buitlin.debug:
+        msg: "I'm learning {{ course }} and my trainer is {{ Shiva }} and duration is {{ duration }}"
+    - name: "variables"
+      ansible.builtin.debug:
+        msg: "I'm learning {{ course }} and  my trainer is {{ Shiva }} and duration is {{ duration }}"
