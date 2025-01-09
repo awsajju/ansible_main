@@ -1,0 +1,12 @@
+- name: playbook for vars
+  hosts: local
+  connection: local
+  vars:
+    - course: "AWS DEVSECOPS"
+    - trainer: "Shiva sir"
+    - duration: "120hrs"
+  tasks:
+    - name: printing the variables
+      ansible.builtin.bebug:
+        msg: "hi i'm learning {{ course }} and my trainer is {{ trainer }} and the duration is {{ duration }}"
+        
