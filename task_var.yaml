@@ -14,4 +14,4 @@
 
   - name: variable passing
     ansible.builtin.debug:
-      msg: ""I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
+      msg: "I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
