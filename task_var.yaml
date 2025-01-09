@@ -6,6 +6,6 @@
       - course: "Aws devsecops"
       - trainer: "shiva sir"
       - duration: "120hrs"
-  - name: variables passing from tasks
-    ansible.builtin.debug:
-      msg: "I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
+    - name: variables passing from tasks
+      ansible.builtin.debug:
+       msg: "I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
