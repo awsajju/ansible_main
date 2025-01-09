@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-      - course: "Aws devsecops"
-      - trainer: "shiva sir"
-      - duration: "120hrs"
+    course: "Aws devsecops"
+    trainer: "shiva sir"
+    duration: "120hrs"
   tasks:
   - name: variables passing from tasks
     vars:
-       - course: Ansible
+      course: Ansible
     ansible.builtin.debug:
        msg: "I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
 
