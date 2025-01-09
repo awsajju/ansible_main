@@ -11,9 +11,6 @@
       service: nginx
       state: started
       enable: yes
-  - name: restart the ninx
-    ansible.builtin.service:
-      service: nginx
-      state: restart
+  
 
     
