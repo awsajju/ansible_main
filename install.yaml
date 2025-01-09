@@ -10,5 +10,11 @@
   - name: start the nginx
     ansible.builtin.service:
       service: nginx
-      state: stopped
+      state: start
+      enable: yes
+  - name: restart the ninx
+    ansible.builtin.service:
+      service: nginx
+      state: restart
+      
     
