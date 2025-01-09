@@ -1,0 +1,11 @@
+- name: multi line playbook
+  hosts: local
+  connection: local
+  tasks:
+    - name: hello Ajay
+      ansible.builtin.debug:
+        msg: "Hello Ajay"
+    - name: printing msg
+      ansible.builtin.debug:
+        msg: "I'm fine and u"
+        
