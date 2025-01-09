@@ -1,6 +1,5 @@
 - name: installing nginx
-  hosts: local
-  connection: local
+  hosts: web
   become: yes
   tasks:
   - name: install nginx
@@ -10,11 +9,11 @@
   - name: start the nginx
     ansible.builtin.service:
       service: nginx
-      state: start
+      state: started
       enable: yes
   - name: restart the ninx
     ansible.builtin.service:
       service: nginx
       state: restart
-      
+
     
