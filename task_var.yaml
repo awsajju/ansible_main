@@ -5,7 +5,6 @@
       - course: "Aws devsecops"
       - trainer: "shiva sir"
       - duration: "120hrs"
-    - name: variables passing from tasks
   tasks:
   - name: variables passing from tasks
     vars:
