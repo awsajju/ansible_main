@@ -10,7 +10,7 @@
     vars:
       course: "devops"
     ansible.builtin.debug:
-        msg: "I'm learning {{ course }} and my trainer is {{ Shiva }} and duration is {{ duration }}"
+        msg: "I'm learning {{ course }} and my trainer is {{ trainer }} and duration is {{ duration }}"
   - name: "variables"
     ansible.builtin.debug:
-      msg: "I'm learning {{ course }} and  my trainer is {{ Shiva }} and duration is {{ duration }}"
+      msg: "I'm learning {{ course }} and  my trainer is {{ trainer }} and duration is {{ duration }}"
