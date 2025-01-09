@@ -9,7 +9,7 @@
   - name: Enter the variables
     vars:
       course: "devops"
-    ansible.buitlin.debug:
+    ansible.builtin.debug:
         msg: "I'm learning {{ course }} and my trainer is {{ Shiva }} and duration is {{ duration }}"
   - name: "variables"
     ansible.builtin.debug:
