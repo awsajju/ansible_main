@@ -1,7 +1,7 @@
 - name: playbook for task vars
   hosts: local
   connection: local
-   vars:
+  vars:
       - course: "Aws devsecops"
       - trainer: "shiva sir"
       - duration: "120hrs"
