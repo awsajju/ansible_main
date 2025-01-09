@@ -1,11 +1,18 @@
 - name: playbook for task vars
   hosts: local
   connection: local
-  tasks:
-    vars:
+   vars:
       - course: "Aws devsecops"
       - trainer: "shiva sir"
       - duration: "120hrs"
     - name: variables passing from tasks
+  tasks:
+    - name: variables passing from tasks
+      vars:
+        - course: Ansible
       ansible.builtin.debug:
        msg: "I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
+
+    - name: variable passing
+      ansible.builtin.debug:
+        msg: ""I'm learnig {{ course }} and my trainer is {{ trainer }} and the class duration is {{ duration }}"
